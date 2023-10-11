@@ -50,7 +50,7 @@ pygame.display.update()
 while (True):
     for event in pygame.event.get():
         # check if the user closed the window
-        if (event.type == pygame.QUIT):
+        if (event.type == pygame.QUIT or (event.type==pygame.KEYDOWN and event.key==pygame.K_ESCAPE)):
             # end the program
             pygame.quit()
             sys.exit()
