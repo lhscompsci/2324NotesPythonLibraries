@@ -1,10 +1,9 @@
 # Using Libraries
 
 # one useful library is:  random
-import random
 
-import pygame
 import sys
+
 from graphics import *
 
 print(random.randint(2, 22))
@@ -22,10 +21,10 @@ screen = pygame.display.set_mode((800, 600))
 white = (255, 255, 255)
 blue = (0, 0, 255)
 black = (0, 0, 0)
-r = random.randint(0,256)
-g = random.randint(0,256)
-b = random.randint(0,256)
-randColor = (r,g,b)
+r = random.randint(0, 256)
+g = random.randint(0, 256)
+b = random.randint(0, 256)
+randColor = (r, g, b)
 screen.fill(white)
 red = (255, 0, 0)
 green = (0, 125, 0)
@@ -53,7 +52,7 @@ while (True):
     for event in pygame.event.get():
         # check if the user closed the window
         # you can quit either by clicking the RED [X] or by pressing the Esc key
-        if (event.type == pygame.QUIT or (event.type==pygame.KEYDOWN and event.key==pygame.K_ESCAPE)):
+        if (event.type == pygame.QUIT or (event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE)):
             # end the program
             pygame.quit()
             sys.exit()
